@@ -19,7 +19,6 @@ def scan_pii_batch(examples, key_detector="other"):
     """Scan a batch of examples from a dataset to detect PII
     This add two columns to the dataset:
     - secrets: (list) of secrets/PII found
-    - has_secrets: (bool) whether the example contains secrets/PII
     """
     list_secrets = []
     list_has_secrets = []
